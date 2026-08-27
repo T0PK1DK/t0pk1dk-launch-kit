@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Signal — a premium landing page kit for indie products and studios. Ship a polished page in hours, not weeks.">
+  <title>Signal — Landing Page Kit for Indie Products</title>
+
+  <!-- Fonts: swap Newsreader (serif) + Sora (sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/svg/logo-mark.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECTION 1: Announcement Bar + Navigation
+       ═══════════════════════════════════════════════════════════ -->
+
+  <!-- Announcement bar -->
+  <div class="announcement" role="region" aria-label="Announcement">
+    <div class="announcement__inner">
+      <span class="announcement__badge">New</span>
+      <span>Signal v1.0 is live — forest/ink theme, mobile-first, zero build step</span>
+      <a href="#pricing" class="announcement__link">See pricing →</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" aria-label="Signal home">
+        <img src="assets/svg/logo-mark.svg" alt="" class="nav__logo-mark" width="32" height="32">
+        Signal
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#how-it-works" class="nav__link">How it works</a>
+        <a href="#pricing" class="nav__link">Pricing</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="#footer" class="btn btn--ghost">Docs</a>
+        <a href="#pricing" class="btn btn--primary">Get Signal</a>
+      </div>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="nav__toggle-icon nav__toggle-icon--open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="4" y1="7" x2="20" y2="7"/>
+          <line x1="4" y1="12" x2="20" y2="12"/>
+          <line x1="4" y1="17" x2="20" y2="17"/>
+        </svg>
+        <svg class="nav__toggle-icon nav__toggle-icon--close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="6" y1="6" x2="18" y2="18"/>
+          <line x1="6" y1="18" x2="18" y2="6"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobile-menu" class="nav__mobile" aria-label="Mobile">
+      <a href="#features" class="nav__mobile-link">Features</a>
+      <a href="#how-it-works" class="nav__mobile-link">How it works</a>
+      <a href="#pricing" class="nav__mobile-link">Pricing</a>
+      <a href="#faq" class="nav__mobile-link">FAQ</a>
+      <div class="nav__mobile-actions">
+        <a href="#footer" class="btn btn--secondary">Docs</a>
+        <a href="#pricing" class="btn btn--primary">Get Signal</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 2: Hero
+         Two-column layout · serif headline · dual CTAs · product frame
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <span class="hero__eyebrow">Landing page kit · by T0PK1DK</span>
+
+            <h1 class="hero__title">The landing page that ships before your coffee gets cold</h1>
+
+            <p class="hero__subtitle">
+              Signal is a premium HTML/CSS kit for indie makers and small studios.
+              Nine polished sections, one variables file, zero build pipeline — just open, edit, deploy.
+            </p>
+
+            <ul class="hero__bullets">
+              <li class="hero__bullet">
+                <svg class="hero__bullet-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="4" y="4" width="16" height="16" rx="3" fill="#5a8f72" opacity="0.2"/>
+                  <path d="M8 12l3 3 5-6" stroke="#2d5244" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Mobile-first with 44px tap targets and a proper hamburger menu
+              </li>
+              <li class="hero__bullet">
+                <svg class="hero__bullet-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2" fill="#c47d3a" opacity="0.2"/>
+                  <path d="M3 9h18" stroke="#c47d3a" stroke-width="1.5"/>
+                  <rect x="7" y="13" width="6" height="2" rx="1" fill="#c47d3a"/>
+                </svg>
+                Rebrand in minutes via CSS custom properties
+              </li>
+              <li class="hero__bullet">
+                <svg class="hero__bullet-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="12" r="8" fill="#1e3a2f" opacity="0.15"/>
+                  <path d="M12 8v4l3 2" stroke="#1e3a2f" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                Deploy to Cloudflare Pages from repo root — no npm required
+              </li>
+            </ul>
+
+            <div class="hero__actions btn-group">
+              <a href="#pricing" class="btn btn--primary btn--lg">Get Signal — $29</a>
+              <a href="#how-it-works" class="btn btn--secondary btn--lg">See how it works</a>
+            </div>
+
+            <div class="hero__proof">
+              <div class="hero__avatars" aria-hidden="true">
+                <img src="assets/svg/avatar-1.svg" alt="" class="hero__avatar" width="32" height="32">
+                <img src="assets/svg/avatar-2.svg" alt="" class="hero__avatar" width="32" height="32">
+                <img src="assets/svg/avatar-3.svg" alt="" class="hero__avatar" width="32" height="32">
+                <img src="assets/svg/avatar-4.svg" alt="" class="hero__avatar" width="32" height="32">
+                <img src="assets/svg/avatar-5.svg" alt="" class="hero__avatar" width="32" height="32">
+              </div>
+              <p class="hero__proof-text">
+                <span class="hero__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                Trusted by indie makers &amp; studio teams
+              </p>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero__visual-bg" aria-hidden="true"></div>
+            <div class="hero__frame">
+              <img src="assets/svg/hero-preview.svg" alt="Signal kit preview showing hero, features, and pricing sections" width="560" height="380">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 3: Logo / Trust Strip
+         Generic placeholder marks — replace with your own client logos
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="trust" aria-label="Trusted by">
+      <div class="container">
+        <p class="trust__label">Used by teams who ship fast</p>
+        <div class="trust__logos">
+          <img src="assets/svg/trust-logo-1.svg" alt="Placeholder brand mark" class="trust__logo" width="120" height="32">
+          <img src="assets/svg/trust-logo-2.svg" alt="Placeholder brand mark" class="trust__logo" width="120" height="32">
+          <img src="assets/svg/trust-logo-3.svg" alt="Placeholder brand mark" class="trust__logo" width="120" height="32">
+          <img src="assets/svg/trust-logo-4.svg" alt="Placeholder brand mark" class="trust__logo" width="120" height="32">
+          <img src="assets/svg/trust-logo-5.svg" alt="Placeholder brand mark" class="trust__logo" width="120" height="32">
+          <img src="assets/svg/trust-logo-6.svg" alt="Placeholder brand mark" class="trust__logo" width="120" height="32">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 4: Features
+         3–6 feature cards · swap icons, titles, and copy
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="section features" id="features">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="section-label">Features</span>
+          <h2 class="section-title">Everything you need to launch — nothing you don't</h2>
+          <p class="section-subtitle">
+            Nine reusable sections, thoughtfully composed. Each block is commented in the HTML so you can find, edit, or remove it in seconds.
+          </p>
+        </header>
+
+        <div class="features__grid">
+          <article class="feature-card">
+            <svg class="feature-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect width="40" height="40" rx="10" fill="#5a8f72" opacity="0.12"/>
+              <path d="M12 28V16l8 6 8-6v12" stroke="#2d5244" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="feature-card__title">Nine ready-made sections</h3>
+            <p class="feature-card__text">Nav, hero, trust strip, features, how-it-works, pricing, FAQ, final CTA, and footer — all wired up and responsive.</p>
+          </article>
+
+          <article class="feature-card">
+            <svg class="feature-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect width="40" height="40" rx="10" fill="#c47d3a" opacity="0.12"/>
+              <circle cx="20" cy="20" r="8" stroke="#c47d3a" stroke-width="2"/>
+              <path d="M20 14v6l4 2" stroke="#c47d3a" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3 class="feature-card__title">One-file retheming</h3>
+            <p class="feature-card__text">All colors, fonts, spacing, and radii live in <code>css/variables.css</code>. Change your brand palette without hunting through dozens of files.</p>
+          </article>
+
+          <article class="feature-card">
+            <svg class="feature-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect width="40" height="40" rx="10" fill="#1e3a2f" opacity="0.12"/>
+              <rect x="11" y="14" width="18" height="14" rx="2" stroke="#1e3a2f" stroke-width="2"/>
+              <path d="M17 28v4h6v-4" stroke="#1e3a2f" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3 class="feature-card__title">Mobile-first by default</h3>
+            <p class="feature-card__text">Designed at 390px first: 20px gutters, 44px tap targets, hamburger nav, and layouts that scale up gracefully to desktop.</p>
+          </article>
+
+          <article class="feature-card">
+            <svg class="feature-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect width="40" height="40" rx="10" fill="#5a8f72" opacity="0.12"/>
+              <path d="M14 20h12M20 14v12" stroke="#2d5244" stroke-width="2" stroke-linecap="round"/>
+              <rect x="10" y="10" width="20" height="20" rx="4" stroke="#2d5244" stroke-width="1.5" stroke-dasharray="3 3"/>
+            </svg>
+            <h3 class="feature-card__title">Zero build step</h3>
+            <p class="feature-card__text">Plain HTML, CSS, and a touch of vanilla JS. Open in any editor, push to Cloudflare Pages, and you're live. No webpack, no drama.</p>
+          </article>
+
+          <article class="feature-card">
+            <svg class="feature-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect width="40" height="40" rx="10" fill="#1e3a2f" opacity="0.12"/>
+              <path d="M12 26l6-12 6 8 4-6 6 10" stroke="#1e3a2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="feature-card__title">Original SVG visuals</h3>
+            <p class="feature-card__text">Every illustration, logo mark, and avatar is original — no stock photos, no stolen assets, no fake testimonials with real people's faces.</p>
+          </article>
+
+          <article class="feature-card">
+            <svg class="feature-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect width="40" height="40" rx="10" fill="#c47d3a" opacity="0.12"/>
+              <path d="M14 14h12v12H14z" stroke="#c47d3a" stroke-width="2"/>
+              <path d="M18 18h8M18 22h5" stroke="#c47d3a" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <h3 class="feature-card__title">Commercial license included</h3>
+            <p class="feature-card__text">Use Signal in unlimited personal and client projects. Build landing pages for paying customers — just don't resell the kit itself.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 5: How It Works
+         Three-step flow with illustration frames
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="section how-it-works" id="how-it-works">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="section-label">How it works</span>
+          <h2 class="section-title">From download to deployed in three steps</h2>
+          <p class="section-subtitle">No framework lock-in. No config files. Just edit the HTML, tweak the variables, and push.</p>
+        </header>
+
+        <div class="steps">
+          <article class="step">
+            <div class="step__number" aria-hidden="true"></div>
+            <div class="step__visual">
+              <img src="assets/svg/step-download.svg" alt="Download and unzip the kit files" width="320" height="200">
+            </div>
+            <div>
+              <h3 class="step__title">Download &amp; unzip</h3>
+              <p class="step__text">Grab the kit, extract the folder, and open <code>index.html</code> in your browser. Everything works locally — no server needed.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step__number" aria-hidden="true"></div>
+            <div class="step__visual">
+              <img src="assets/svg/step-customize.svg" alt="Customize colors and copy in the source files" width="320" height="200">
+            </div>
+            <div>
+              <h3 class="step__title">Customize your brand</h3>
+              <p class="step__text">Edit <code>css/variables.css</code> for colors and type. Replace the demo copy in <code>index.html</code> with your product's story.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step__number" aria-hidden="true"></div>
+            <div class="step__visual">
+              <img src="assets/svg/step-launch.svg" alt="Deploy to Cloudflare Pages" width="320" height="200">
+            </div>
+            <div>
+              <h3 class="step__title">Deploy &amp; launch</h3>
+              <p class="step__text">Push to GitHub and connect Cloudflare Pages. Your landing page goes live in under a minute — SSL included, CDN included.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 6: Pricing
+         Three tiers + comparison table
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="section-label">Pricing</span>
+          <h2 class="section-title">Pick the plan that fits your launch</h2>
+          <p class="section-subtitle">One-time purchase. No subscriptions. All plans include lifetime updates for the version you buy.</p>
+        </header>
+
+        <div class="pricing__cards">
+          <!-- Starter -->
+          <article class="pricing-card">
+            <p class="pricing-card__name">Starter</p>
+            <p class="pricing-card__price">$19 <span>/ once</span></p>
+            <p class="pricing-card__desc">For solo makers launching their first product page.</p>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Full HTML/CSS source
+              </li>
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                All 9 sections
+              </li>
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Personal use license
+              </li>
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Original SVG assets
+              </li>
+            </ul>
+            <div class="pricing-card__cta">
+              <a href="#" class="btn btn--secondary">Get Starter</a>
+            </div>
+          </article>
+
+          <!-- Pro (featured) -->
+          <article class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge">Most popular</span>
+            <p class="pricing-card__name">Pro</p>
+            <p class="pricing-card__price">$29 <span>/ once</span></p>
+            <p class="pricing-card__desc">For indie hackers and freelancers who ship client work.</p>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Everything in Starter
+              </li>
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Commercial license
+              </li>
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Priority email support
+              </li>
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Figma reference file
+              </li>
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Lifetime v1 updates
+              </li>
+            </ul>
+            <div class="pricing-card__cta">
+              <a href="#" class="btn btn--primary">Get Pro — $29</a>
+            </div>
+          </article>
+
+          <!-- Studio -->
+          <article class="pricing-card">
+            <p class="pricing-card__name">Studio</p>
+            <p class="pricing-card__price">$79 <span>/ once</span></p>
+            <p class="pricing-card__desc">For agencies and teams building multiple client landing pages.</p>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Everything in Pro
+              </li>
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Team license (up to 10 seats)
+              </li>
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                White-label rights
+              </li>
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Extended SVG icon pack
+              </li>
+              <li class="pricing-card__feature">
+                <svg class="pricing-card__check" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Slack support channel
+              </li>
+            </ul>
+            <div class="pricing-card__cta">
+              <a href="#" class="btn btn--secondary">Get Studio</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Comparison table -->
+        <div class="comparison">
+          <div class="comparison__header">
+            <h3 class="comparison__title">Compare plan details</h3>
+          </div>
+          <div class="comparison__table-wrap">
+            <table class="comparison__table">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">Starter</th>
+                  <th scope="col">Pro</th>
+                  <th scope="col">Studio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sections included</td>
+                  <td>9</td>
+                  <td>9</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>Commercial use</td>
+                  <td>—</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Client projects</td>
+                  <td>—</td>
+                  <td>Unlimited</td>
+                  <td>Unlimited</td>
+                </tr>
+                <tr>
+                  <td>Team seats</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Figma reference</td>
+                  <td>—</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>White-label</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Support</td>
+                  <td>Community</td>
+                  <td>Email</td>
+                  <td>Slack</td>
+                </tr>
+                <tr>
+                  <td>Updates</td>
+                  <td>v1.x</td>
+                  <td>v1.x</td>
+                  <td>v1.x + v2 beta</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 7: FAQ
+         Accordion · one item open at a time
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">Questions, answered</h2>
+          <p class="section-subtitle">Everything you need to know before you buy. Can't find your answer? Email hello@t0pk1dk.dev</p>
+        </header>
+
+        <div class="faq__list">
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Do I need to know how to code?
+              <svg class="faq__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                <p class="faq__answer-text">Basic HTML familiarity helps, but you don't need to be a developer. If you can edit text in a file and change a hex color, you can customize Signal. The README walks through every step.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Is there a build step or framework?
+              <svg class="faq__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                <p class="faq__answer-text">No. Signal is plain HTML, CSS, and a small vanilla JS file for the mobile menu and FAQ accordion. Open index.html in any browser, edit in any text editor, deploy anywhere static files are served.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Can I use this for client work?
+              <svg class="faq__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                <p class="faq__answer-text">Yes — with the Pro or Studio license. You can build unlimited landing pages for paying clients. You may not resell or redistribute the kit files themselves. See LICENSE.txt for full terms.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              What about the demo content on this page?
+              <svg class="faq__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                <p class="faq__answer-text">All copy, pricing, and brand names on this demo page are fictional placeholder content for Signal (the kit selling itself). Replace everything in index.html with your own product's story, pricing, and links.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              How do I deploy to Cloudflare Pages?
+              <svg class="faq__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                <p class="faq__answer-text">Push this repo to GitHub, connect it in the Cloudflare Pages dashboard, and set the build output directory to <code>/</code> (repo root). No build command needed. Cloudflare serves index.html automatically.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Do you offer refunds?
+              <svg class="faq__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                <p class="faq__answer-text">Yes. If Signal isn't the right fit within 14 days of purchase, email us for a full refund — no questions asked. We'd rather you find the right tool than keep something you won't use.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 8: Final CTA
+         Full-width conversion block
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="section final-cta" id="final-cta">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <h2 class="section-title">Stop wrestling with templates.<br>Start shipping.</h2>
+          <p class="section-subtitle">Join hundreds of indie makers who launched faster with Signal. One purchase, unlimited projects, zero monthly fees.</p>
+        </header>
+        <div class="final-cta__actions">
+          <a href="#pricing" class="btn btn--primary btn--lg">Get Signal — from $19</a>
+          <a href="#faq" class="btn btn--secondary btn--lg">Read the FAQ</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECTION 9: Footer
+       Brand · links · legal
+       ═══════════════════════════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/svg/logo-mark.svg" alt="" width="28" height="28">
+            Signal
+          </div>
+          <p class="footer__tagline">A premium landing page kit by <strong>T0PK1DK</strong>. Built for indie products, studios, and anyone who'd rather ship than configure.</p>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Product</p>
+          <ul class="footer__links">
+            <li><a href="#features" class="footer__link">Features</a></li>
+            <li><a href="#pricing" class="footer__link">Pricing</a></li>
+            <li><a href="#how-it-works" class="footer__link">How it works</a></li>
+            <li><a href="#faq" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Resources</p>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Documentation</a></li>
+            <li><a href="#" class="footer__link">Changelog</a></li>
+            <li><a href="#" class="footer__link">License</a></li>
+            <li><a href="#" class="footer__link">Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">T0PK1DK</p>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">About</a></li>
+            <li><a href="#" class="footer__link">Other kits</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="mailto:hello@t0pk1dk.dev" class="footer__link">hello@t0pk1dk.dev</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 T0PK1DK. All rights reserved.</p>
+        <p>Demo content — replace with your own copy before launch.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
