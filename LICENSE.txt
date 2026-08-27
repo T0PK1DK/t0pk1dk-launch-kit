@@ -1,0 +1,50 @@
+SIGNAL LANDING PAGE KIT — LICENSE AGREEMENT
+============================================
+
+Copyright (c) 2026 T0PK1DK. All rights reserved.
+
+This license governs your use of the Signal landing page kit ("the Kit"),
+including all HTML, CSS, JavaScript, SVG assets, and documentation files
+included in this repository.
+
+PERMITTED USES
+--------------
+You MAY:
+
+  • Use the Kit for unlimited personal projects.
+  • Use the Kit for unlimited commercial and client projects (Pro and
+    Studio licenses, or as stated at time of purchase).
+  • Modify, customize, and adapt the Kit for your own products and clients.
+  • Deploy the Kit (or derivatives) to any hosting platform.
+  • Remove or replace branding, attribution, and demo content.
+
+RESTRICTIONS
+------------
+You MAY NOT:
+
+  • Resell, redistribute, sublicense, or otherwise share the Kit source files
+    — in original or modified form — as a template, theme, or competing
+    product.
+  • Include the Kit (or substantial portions) in another template marketplace,
+    bundle, or "free resources" collection.
+  • Claim authorship of the original Kit design or assets.
+
+ATTRIBUTION
+-----------
+Attribution to T0PK1DK is appreciated but not required in deployed projects.
+You must not represent T0PK1DK as endorsing your product unless agreed in writing.
+
+WARRANTY DISCLAIMER
+-------------------
+THE KIT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+LIMITATION OF LIABILITY
+-----------------------
+IN NO EVENT SHALL T0PK1DK BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY ARISING FROM USE OF THE KIT.
+
+QUESTIONS
+---------
+Email: hello@t0pk1dk.dev
